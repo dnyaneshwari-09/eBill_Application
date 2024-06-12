@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <title>eBill Signup</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">eBill</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="home.html">Home
+                  <span class="visually-hidden">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="payment.html">Payment</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="new_connection.html">New Connection</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="history.html">History check</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="complaint.html">complaint</a>
+              </li>
+             
+             <li class="nav-item">
+                <div class="btn-group" role="group" aria-label="Basic example">
+              <a href="login.html"      ><button type="button" class="btn btn-secondary">Login</button></a>
+              <a href="signup.html"      >    <button type="button" class="btn btn-secondary">Signup</button></a>
+                  </div>
+
+             </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-sm-2" type="search" placeholder="Search">
+             <button class="btn btn-secondary my-2 my-sm-0" type="submit" onclick="document.location='login.html'">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <div class="row justify-content-center align-items-center min-vh-100">
+        <div class="col-md-8">
+          <div class="card bg-light">
+            <div class="card-body">
+              <form action="/submit_login" method="post">
+                <fieldset>
+                  <legend class="text-center mb-4">eBill Registration</legend>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="exampleInputname">First name</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="exampleInputname"
+                          placeholder="Enter first name"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="exampleInputlastname">Last name</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="exampleInputlastname"
+                          placeholder="Enter last name"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input
+                          type="email"
+                          class="form-control"
+                          id="exampleInputEmail1"
+                          aria-describedby="emailHelp"
+                          placeholder="Enter email"
+                        />
+                        <small id="emailHelp" class="form-text text-muted"
+                          >We'll never share your email with anyone else.</small
+                        >
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input
+                          type="password"
+                          class="form-control"
+                          id="exampleInputPassword1"
+                          placeholder="Password"
+                          autocomplete="off"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label for="addressCountry">Country</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="addressCountry"
+                          placeholder="Enter country"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label for="addressState">State</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="addressState"
+                          placeholder="Enter state"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label for="addressCity">City</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="addressCity"
+                          placeholder="Enter city"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row justify-content-center">
+                    <div class="col-md-4">
+                      <button type="button" class="btn btn-primary btn-lg btn-block mt-4">
+                        Signup
+                      </button>
+                    </div>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

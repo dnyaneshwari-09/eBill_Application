@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill Payment</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+
+</head>
+<body>
+    
+    <div class="container">
+
+      
+        <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">eBill</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarColor01">
+                <ul class="navbar-nav me-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Home
+                      <span class="visually-hidden">(current)</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="payment.html">Payment</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="new_connection.html">New Connection</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="history.html">History check</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="complaint.html">complaint</a>
+                  </li>
+                 
+                 <li class="nav-item">
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                  <a href="login.html"      ><button type="button" class="btn btn-secondary">Login</button></a>
+                  <a href="signup.html"      >    <button type="button" class="btn btn-secondary">Signup</button></a>
+                      </div>
+    
+                 </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-sm-2" type="search" placeholder="Search">
+                 <button class="btn btn-secondary my-2 my-sm-0" type="submit" onclick="document.location='login.html'">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    
+          <h1>Pay Your Bill</h1>
+
+    <form action="/submit_payment" method="post">
+        <div class="form-group">
+            <label for="customer_id">Customer ID:</label>
+            <input type="number" id="customer_id" name="customer_id" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="Sub_division_code">Sub division code :</label>
+            <input type="number" id="Sub_division_code" name="Sub_division_code" class="form-control" required>
+        </div>
+
+
+        <div class="form-group">
+            <label for="amount">Amount:</label>
+            <input type="number" id="amount" name="amount"  class="form-control"required>
+        </div>
+
+        <div class="form-group">
+            <label for="payment_method">Payment Method:</label>
+            <select id="payment_method" name="payment_method" required>
+                <option value="credit_card">Credit Card</option>
+                <option value="debit_card">Debit Card</option>
+                <option value="net_banking">Net Banking</option>
+                <option value="upi">UPI</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="card_number">Card Number:</label>
+            <input type="text" id="card_number" name="card_number" required>
+        </div>
+
+        <div class="form-group">
+            <label for="expiry_date">Expiry Date:</label>
+            <input type="month" id="expiry_date" name="expiry_date" class="form-control" required>
+        </div>
+
+        <div class="form-group">
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" name="cvv" class="form-control" required>
+        </div>
+
+        <div class="form-group">
+            <label for="name_on_card">Name on Card:</label>
+            <input type="text" id="name_on_card" name="name_on_card"  class="form-control">
+        </div>
+
+        <div class="btn">
+            <input type="submit" value="Pay Now">
+        </div>
+    </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome page</title>
+    <link rel="stylesheet" href="bootstrap.min.css" />
+
+</head>
+<body>
+    <div class="container">
+    <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">eBill</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="home.html">Home
+                  <span class="visually-hidden">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="payment.html">Payment</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="new_connection.html">New Connection</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="history.html">History check</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="complaint.html">complaint</a>
+              </li>
+             
+             <li class="nav-item">
+                <div class="btn-group" role="group" aria-label="Basic example">
+              <a href="login.html"      ><button type="button" class="btn btn-secondary">Login</button></a>
+              <a href="signup.html"      >    <button type="button" class="btn btn-secondary">Signup</button></a>
+                  </div>
+
+             </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-sm-2" type="search" placeholder="Search">
+             <button class="btn btn-secondary my-2 my-sm-0" type="submit" onclick="document.location='login.html'">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+
+    <!-- <div class="p-5 bg-secondary text-white text-center">
+        <div id="carouselExampleIndicators" class="carousel slide custom-carousel" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://via.placeholder.com/800x400" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://via.placeholder.com/800x400" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://via.placeholder.com/800x400" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+  
+            
+    </div> -->
+
+   <div class="card border-secondary mb-3" style="max-width: 35rem;">
+        <div class="card-header">eBill</div>
+        <div class="card-body">
+          <h4 class="card-title">Login to eBill</h4>
+          <p class="card-text">
+            <div class="container">
+   
+    
+                <form action="" method="post">
+                    <fieldset>
+                        
+                        <div class="row">
+                    <div class="col-sm-6">
+                        <label for="exampleInputEmail1" class="form-label  mt-4">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                      </div>
+                      </div>
+                      <div class="row">
+                      <div class="col-sm-6">
+                        <label for="exampleInputPassword1" class="form-label mt-4">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" autocomplete="off">
+                      </div>
+                      </div>
+            
+                    <button type="button" class="btn btn-primary btn-lg mt-4">Login</button>        <span><a href="/forgot_password">Forgot password?</a></span>
+                    <span><a href="signup.html">new registration ?</a></span>
+                </fieldset>
+                </form>
+                </div>
+          </p>
+        </div>
+
+        <footer>&copy; Copyright 2024 eBill</footer>
+
+ </div>
+
+ 
+</body>
+</html>
